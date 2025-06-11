@@ -1,7 +1,11 @@
+"use client";
+import NetworkSelector from "./NetworkSelector";
+import "../componentsStyles/settings.css"
+
 export default function Settings() {
   return (
     <div className="main">
-      <p>Zarządzaj ustawieniami gry oraz blockchain</p>
+      <div><NetworkSelector /></div>
     </div>
   );
 }
