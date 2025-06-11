@@ -1,5 +1,5 @@
 "use client";
-import { useWallet  } from "@thirdweb-dev/react";
+import { useWallet } from "@thirdweb-dev/react";
 import { redirect } from "next/navigation";
 import NFTDisplay from "../../../components/Settings";
 import "../../../componentsStyles/nftdisplay.css"

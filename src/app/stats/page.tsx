@@ -1,5 +1,5 @@
 "use client";
-import { useWallet  } from "@thirdweb-dev/react";
+import { useWallet } from "@thirdweb-dev/react";
 import { redirect } from "next/navigation";
 import Stats from "../../../components/Stats";
 import "../../../componentsStyles/stats.css"

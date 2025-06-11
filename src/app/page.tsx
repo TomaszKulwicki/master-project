@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useWallet  } from "@thirdweb-dev/react";
+import { useWallet } from "@thirdweb-dev/react";
 import { client } from "./client";
 import "../../componentsStyles/page.css"
 
