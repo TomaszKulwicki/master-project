@@ -1,11 +1,11 @@
 "use client";
-import { useActiveWallet } from "thirdweb/react";
+import { useWallet  } from "@thirdweb-dev/react";
 import { redirect } from "next/navigation";
 import NFTDisplay from "../../../components/Settings";
 import "../../../componentsStyles/nftdisplay.css"
 
 export default function Settings() {
-  const wallet = useActiveWallet();
+  const wallet = useWallet();
   if (!wallet) redirect("/");
   return <NFTDisplay />;
 }

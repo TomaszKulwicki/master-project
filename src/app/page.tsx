@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useActiveWallet } from "thirdweb/react";
+import { useWallet  } from "@thirdweb-dev/react";
 import { client } from "./client";
 import "../../componentsStyles/page.css"
 
 export default function Home() {
-  const wallet = useActiveWallet();
+  const wallet = useWallet();
   
   return (
     <div className="main">
