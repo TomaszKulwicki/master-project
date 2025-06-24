@@ -41,7 +41,8 @@ export default function Navbar() {
             <Link href="/upgrades">Ulepszenia</Link>|
             <Link href="/stats">Statystyki</Link>|
             <Link href="/nft">Twoje NFT</Link>|
-            <Link href="/settings">Ustawienia</Link>
+            <Link href="/settings">Ustawienia</Link>|
+            Wybrana sieć: 
           </>
         )}
       </div>

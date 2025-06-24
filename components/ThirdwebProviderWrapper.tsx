@@ -1,12 +1,33 @@
 "use client";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { useEffect, useState } from "react";
+import { Sepolia, AvalancheFuji, Chain } from "@thirdweb-dev/chains";
+
+export const amoy = {
+  chainId: 80002,
+  name: "Polygon Amoy Testnet",
+  chain: "polygon",
+  shortName: "amoy",
+  slug: "amoy",
+  rpc: ["https://rpc-amoy.polygon.technology"],
+  nativeCurrency: {
+    name: "MATIC",
+    symbol: "MATIC",
+    decimals: 18,
+  },
+  blockExplorers: {
+    default: {
+      name: "OKLink",
+      url: "https://www.oklink.com/amoy",
+    },
+  },
+  testnet: true,
+} as const;
 
 export const supportedChains = [
-  { chainId: 11155111, name: "Sepolia" },
-  { chainId: 97, name: "BSC Testnet" },
-  { chainId: 43113, name: "Avalanche Fuji" },
-  { chainId: 80001, name: "Polygon Mumbai" },
+  Sepolia,
+  AvalancheFuji,
+  amoy,
 ];
 
 export default function ThirdwebProviderWrapper({
@@ -30,6 +51,7 @@ export default function ThirdwebProviderWrapper({
   return (
     <ThirdwebProvider
       activeChain={activeChainId}
+      supportedChains={supportedChains}
       clientId={process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID}
     >
       {children}

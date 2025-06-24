@@ -23,9 +23,8 @@ export default function NetworkSelector() {
           onChange={handleChange}
         >
           <option value={11155111}>Sepolia (Ethereum)</option>
-          <option value={97}>BSC Testnet</option>
-          <option value={43113}>Avalanche Fuji</option>
-          <option value={80001}>Polygon Mumbai</option>
+          <option value={80002}>Polygon Amoy</option>
+          <option value={43113}>Avalanche Fuji Testnet</option>
         </select>
       </div>
     </div>
